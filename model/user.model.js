@@ -5,8 +5,8 @@ const User = new Schema(
   {
     role: {
       type: String,
-      enum: ["USER", "EMPLOYEE", "ADMIN", "HOST"],
-      default: "USER",
+      enum: ["GUEST", "ADMIN", "HOST"],
+      default: "HOST",
     },
     firstName: {
       type: String,
